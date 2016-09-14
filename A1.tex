@@ -1,0 +1,193 @@
+\documentclass[a4paper,twosides,CJK,12pt]{cctart}
+%\usepackage{mflogo}                %\MF, \MP 命令宏包  ？？？？
+%\usepackage{texnames}              %\AMS 命令宏包   ？？？？？？
+\usepackage{indentfirst}            %首行缩进
+\usepackage{setspace}               %正文行距宏包
+\usepackage{paralist}               %压缩列表及行间列表宏包
+\usepackage{fancyvrb}               %原文打印修饰
+\usepackage{fancybox}               %盒子修饰
+\usepackage{CCT}                    %latex中文解决方案
+
+
+
+\usepackage{multirow}               %合并列
+\usepackage{booktabs}               %表格扩展，如线条粗细变化toprule
+\usepackage{titlesec}
+
+
+\usepackage{amsmath}
+\usepackage{cases}
+%\headsep 0.5 true cm \topmargin 0pt \oddsidemargin 0pt
+%\evensidemargin 0pt \textheight 225mm \textwidth 165mm
+\usepackage{pifont}
+\usepackage{mathrsfs}
+\usepackage{slashbox}
+\usepackage{amsfonts}
+\usepackage[T1]{fontenc}
+\usepackage{ae}
+\usepackage{fancyhdr}
+
+\usepackage{color}
+\usepackage{picins}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{amssymb,amsmath,amsfonts,amsthm}
+\usepackage{epsfig,longtable}
+\usepackage[tight,hang]{subfigure}
+\usepackage{graphics}
+\usepackage{bbding}
+
+\usepackage[top=1in, bottom=1in, left=2.5cm, right=2.5cm]{ geometry}    %页面布局
+\setlength{\parindent}{2em}        %首行缩进距离  未起作用????????
+\addtolength{\parskip}{3pt}        %段落之间的距离
+%\setstretch{1.2}                  %正文行距均为1.2倍行距 在这里全部变成了1倍行距是不是命令行放置的问题？？？？？？？
+%\linespread {1.3}                 %之后所有内容均为一倍半行距 不需要setspace宏包
+%\linespread {1.6}                 %之后所有内容均为双倍行距
+
+\renewcommand{\thefootnote}{\arabic{footnote}}    %脚注样式 \arabic阿拉伯数字 \alph 小写英文字母 \roman 小写罗马数字 \Roman 大写罗马数字
+%\renewcommand{\theenumi}{\alph{enumi}}           %定制列表格式
+\newcommand{\ud}{\mathrm{d}}                      %微分符号
+
+
+
+
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+
+\begin{document}
+
+
+\setstretch{1}
+
+\begin{flushright}
+\zihao{-4}{参赛密码\underline{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }} \ \ \ \ \ \ \ \ \ \ \
+
+\textbf{\zihao{-4}{（由组委会填写）}}\ \ \ \ \ \ \ \ \ \ \ \ \ \
+\end{flushright}
+
+\ \
+
+\ \
+
+\ \
+
+\ \
+
+\ \
+
+\ \
+
+\begin{center}
+  \textbf{\zihao{2}{“华为杯”第十三届全国研究生}}
+
+  \textbf{\zihao{2}{数学建模竞赛}}
+\end{center}
+
+\ \
+
+\ \
+
+\ \
+
+\ \
+
+\ \
+
+\ \
+
+
+
+\begin{table}[htb]
+\centering
+\Large
+\begin{tabular}{p{70pt}p{300pt} }
+&\\
+学\ \ \ \ \ 校  &  \\
+\toprule
+&\\
+参赛队号 & \\
+\hline
+&\\
+& 1.\ \ \ \ \ \ 闫炯程  \\
+\cline{2-2}
+&\\
+队员姓名 &  2.\ \ \ \ \ \ 王柯    \\
+\cline{2-2}
+&\\
+&3.\ \ \ \ \ \ 刘正中   \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\newpage
+
+\begin{flushright}
+\zihao{-4}{参赛密码\underline{\ \ \ \ \ \ \ \ \ \ \ \ \ \ }} \ \ \ \ \ \ \ \ \ \ \
+
+\textbf{\zihao{-4}{（由组委会填写）}}\ \ \ \ \ \ \ \ \ \ \ \ \ \
+\end{flushright}
+
+\ \
+
+\begin{center}
+  \textbf{\zihao{2}{“华为杯”第十三届全国研究生}}
+
+  \textbf{\zihao{2}{数学建模竞赛}}
+\end{center}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=2.7cm,height=2.7cm]{MCM.jpg}
+\hspace{0.2cm}
+\includegraphics[width=2.7cm,height=2.7cm]{chongqing.jpg}
+\hspace{0.2cm}
+\includegraphics[width=2.7cm,height=2.7cm]{huawei.jpg}
+\end{figure}
+
+\ \
+
+\ \
+
+\begin{center}
+  题\ \ \ 目 \ \ \ \underline{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\end{center}
+
+\begin{abstract}
+本文基本内容
+\end{abstract}
+\textbf{关键词：}
+
+
+
+\newpage
+
+%生成目录
+\tableofcontents                                               %
+\thispagestyle{plain}                                             %
+\thispagestyle{empty}
+\newpage
+%\listoffigures      %图目录
+%\listoftables       %表目录
+\setcounter{page}{1}  %从目录后开始编号
+
+\section*{
+\begin{flushleft}
+1.问题回顾
+\end{flushleft}
+}
+
+\addcontentsline{toc}{section}{1.问题回顾}
+This paper conclude from the above data that Nepal is more global but of regional sustainable development from 2005 to 2010. The DSD is larger than 0.25.The footprint is slightly higher than the biocapacity. Because the height above sea level of Nepal is very large and the north area of  Nepal is close to the Himalayas and the natural environment of Nepal is bad, thus 80 percent of its population are engaged in agricultural production. It is one of the least undeveloped countries in the world. The industry foundation of Nepal is very weak. Its industry scale is small and degree of its mechanization is very low. Nepal develops very slowly and receives the aids of other countries for a long time.Through the mathematical model, we make the assistance program plan.
+\subsection*{1.1基本}
+\addcontentsline{toc}{subsection}{1.1基本}
+
+
+
+
+
+
+\end{document}
